@@ -1,0 +1,42 @@
+PRINT("== Numbers ==")
+PRINT(1 + 2 * 3)
+PRINT(10 / 3)
+PRINT(2 ^ 10)
+PRINT(10 > 5)
+PRINT(10 <= 5)
+PRINT("== Variables ==")
+VAR x = 42
+PRINT(x)
+VAR name = "Alice"
+PRINT(name)
+PRINT("== If ==")
+IF 5 > 3 THEN PRINT("yes")
+IF 1 > 2 THEN PRINT("no") ELSE PRINT("nope")
+PRINT("== For ==")
+FOR i = 0 TO 5 THEN PRINT(i)
+PRINT("== While ==")
+VAR j = 0
+WHILE j < 3 THEN
+    PRINT(j)
+    VAR j = j + 1
+END
+PRINT("== Lists ==")
+VAR lst = [10, 20, 30]
+PRINT(lst)
+PRINT(lst / 1)
+PRINT("== Functions ==")
+FUN sq(x) -> x * x
+PRINT(sq(5))
+PRINT("== Recursion ==")
+FUN fact(n)
+    IF n <= 1 THEN
+        RETURN 1
+    ELSE
+        RETURN n * fact(n - 1)
+    END
+END
+PRINT(fact(5))
+PRINT("== Builtins ==")
+PRINT(IS_NUM(42))
+PRINT(IS_STR("hello"))
+PRINT(IS_LIST([1,2,3]))
