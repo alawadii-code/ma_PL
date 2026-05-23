@@ -2,7 +2,6 @@ package mapl;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.BiFunction;
 
 public class Interpreter {
     public RTResult visit(Node node, Context context) {

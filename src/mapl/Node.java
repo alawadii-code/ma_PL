@@ -1,7 +1,5 @@
 package mapl;
 
-import java.util.List;
-
 public abstract class Node {
     public Position posStart, posEnd;
 

@@ -51,24 +51,6 @@ public class Token {
         }
     }
 
-    public Token(String type, Object value) {
-        this.type = type;
-        this.value = value;
-    }
-
-    public Token(String type, Position posStart) {
-        this.type = type;
-        this.value = null;
-        this.posStart = posStart.copy();
-        this.posEnd = posStart.copy();
-        this.posEnd.advance((char) 0);
-    }
-
-    public Token(String type) {
-        this.type = type;
-        this.value = null;
-    }
-
     public boolean matches(String type, String value) {
         return this.type.equals(type) && this.value != null && this.value.equals(value);
     }

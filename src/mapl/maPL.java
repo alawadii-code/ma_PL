@@ -1,7 +1,5 @@
 package mapl;
 
-import java.util.List;
-
 public class maPL {
     public static SymbolTable globalSymbolTable;
 

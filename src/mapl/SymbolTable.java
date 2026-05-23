@@ -28,7 +28,4 @@ public class SymbolTable {
         symbols.put(name, value);
     }
 
-    public void remove(String name) {
-        symbols.remove(name);
-    }
 }
